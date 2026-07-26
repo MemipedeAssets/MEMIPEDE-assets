@@ -8,6 +8,7 @@
   <meta property="og:title" content="MEMIPEDE Creative Hub">
   <meta property="og:description" content="Create. Share. Grow. Explore community-made MEMIPEDE assets.">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://memipedeassets.github.io/MEMIPEDE-assets/">
   <title>MEMIPEDE Creative Hub</title>
 
   <style>
@@ -386,6 +387,104 @@
 
     .copy-contract.copied {
       background: linear-gradient(135deg, var(--acid), #ddff86);
+    }
+
+    .button-buy {
+      color: #151607;
+      background: linear-gradient(135deg, var(--gold), #f3dd8b);
+      box-shadow: 0 14px 34px rgba(232,196,102,0.18);
+    }
+
+    .button-disabled {
+      cursor: not-allowed;
+      opacity: 0.62;
+      pointer-events: none;
+    }
+
+    .contract-note {
+      width: min(690px, 100%);
+      margin: 10px auto 0;
+      color: #8f9285;
+      font-size: 11px;
+      line-height: 1.55;
+      text-align: center;
+    }
+
+    .official-links {
+      padding: 54px 0 5px;
+    }
+
+    .official-links-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 20px;
+    }
+
+    .official-link-card {
+      min-height: 148px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 18px;
+      padding: 21px;
+      border: 1px solid rgba(232,196,102,0.14);
+      border-radius: 20px;
+      color: var(--text);
+      background:
+        linear-gradient(145deg, rgba(232,196,102,0.045), transparent 48%),
+        rgba(17,20,15,0.82);
+      text-decoration: none;
+      transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+    }
+
+    .official-link-card:hover,
+    .official-link-card:focus-visible {
+      transform: translateY(-4px);
+      border-color: rgba(232,196,102,0.35);
+      background:
+        linear-gradient(145deg, rgba(232,196,102,0.07), transparent 48%),
+        rgba(24,29,19,0.96);
+      outline: none;
+    }
+
+    .official-link-icon {
+      font-size: 28px;
+    }
+
+    .official-link-card strong {
+      display: block;
+      font-size: 17px;
+    }
+
+    .official-link-card span {
+      display: block;
+      margin-top: 5px;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.5;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px 16px;
+      margin: 14px 0 10px;
+    }
+
+    .footer-links a {
+      color: #e8c466;
+      text-decoration: none;
+      font-weight: 800;
+    }
+
+    .footer-contract {
+      margin-top: 10px;
+      overflow-wrap: anywhere;
+      color: #cfc8aa;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 11px;
     }
 
     .stats {
@@ -1165,6 +1264,14 @@
         <div class="hero-actions">
           <a class="button button-primary" href="#library">Browse Assets</a>
           <a
+            class="button button-buy"
+            href="https://join.pump.fun/HSag/8yug3xnq"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Buy $MEMIPEDE ↗
+          </a>
+          <a
             class="button button-secondary"
             href="https://x.com/i/communities/2035187824316797150"
             target="_blank"
@@ -1189,6 +1296,10 @@
             Copy CA
           </button>
         </div>
+
+        <p class="contract-note">
+          Always verify the contract address before trading. This is the official $MEMIPEDE contract.
+        </p>
 
         <div class="stats" aria-label="Creative hub highlights">
           <div class="stat">
@@ -1336,25 +1447,88 @@
       </div>
     </section>
 
+    <section class="official-links" aria-labelledby="officialLinksTitle">
+      <div class="section-head">
+        <div class="section-title">
+          <h2 id="officialLinksTitle">Official links</h2>
+          <p>Use these verified destinations for buying, joining, and contributing.</p>
+        </div>
+      </div>
+
+      <div class="official-links-grid">
+        <a class="official-link-card" href="https://join.pump.fun/HSag/8yug3xnq" target="_blank" rel="noopener noreferrer">
+          <div class="official-link-icon">🪙</div>
+          <div>
+            <strong>Buy on Pump.fun</strong>
+            <span>Open the official $MEMIPEDE Pump.fun page.</span>
+          </div>
+        </a>
+
+        <a class="official-link-card" href="https://x.com/i/communities/2035187824316797150" target="_blank" rel="noopener noreferrer">
+          <div class="official-link-icon">👥</div>
+          <div>
+            <strong>X Community</strong>
+            <span>Join the MEMIPEDE community and coordinate posts.</span>
+          </div>
+        </a>
+
+        <a class="official-link-card" href="https://x.com/i/communities/2035187824316797150" target="_blank" rel="noopener noreferrer">
+          <div class="official-link-icon">𝕏</div>
+          <div>
+            <strong>MEMIPEDE on X</strong>
+            <span>Follow community activity, memes, and announcements.</span>
+          </div>
+        </a>
+
+        <a class="official-link-card button-disabled" href="#" aria-disabled="true" tabindex="-1">
+          <div class="official-link-icon">📤</div>
+          <div>
+            <strong>Submit an Asset</strong>
+            <span>Google Form coming soon for community submissions.</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
     <section class="community">
       <h2>Built by the community.</h2>
       <p>
-        Find something useful, remix it, share it, and help MEMIPEDE spread.
-        New creative resources can be added as the community grows.
+        Every meme, banner, GIF, and video helps MEMIPEDE spread across X.
+        Create something original, share it, and help grow the official asset library.
       </p>
-      <a
-        class="button button-primary"
-        href="https://x.com/i/communities/2035187824316797150"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Enter the MEMIPEDE Community ↗
-      </a>
+      <div class="hero-actions">
+        <a
+          class="button button-primary button-disabled"
+          href="#"
+          aria-disabled="true"
+          tabindex="-1"
+        >
+          Submission Form Coming Soon
+        </a>
+        <a
+          class="button button-secondary"
+          href="https://x.com/i/communities/2035187824316797150"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Join the Community ↗
+        </a>
+      </div>
     </section>
 
     <footer>
       <strong>MEMIPEDE Creative Hub</strong><br>
-      Community-made resources for creating, sharing, and growing together.
+      Official community asset library for $MEMIPEDE.
+
+      <div class="footer-links">
+        <a href="https://join.pump.fun/HSag/8yug3xnq" target="_blank" rel="noopener noreferrer">Buy $MEMIPEDE</a>
+        <a href="https://x.com/i/communities/2035187824316797150" target="_blank" rel="noopener noreferrer">Join Community</a>
+        <span>Submit Assets — Coming Soon</span>
+      </div>
+
+      <div>Official Contract Address</div>
+      <div class="footer-contract">6LLNiWXRZp8hn5oTFTHEo8ERbJS3QJfHSKhnTCqipump</div>
+      <div style="margin-top: 12px;">© 2026 MEMIPEDE Community</div>
     </footer>
   </main>
 
