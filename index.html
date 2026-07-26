@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="description" content="The MEMIPEDE Creative Hub — community memes, videos, GIFs, profile pictures, and banners.">
-  <meta name="theme-color" content="#070a0f">
+  <meta name="theme-color" content="#090a08">
   <meta property="og:title" content="MEMIPEDE Creative Hub">
   <meta property="og:description" content="Create. Share. Grow. Explore community-made MEMIPEDE assets.">
   <meta property="og:type" content="website">
@@ -234,6 +234,35 @@
 
     @keyframes shimmer {
       to { background-position: 220% center; }
+    }
+
+
+    .hero-logo-video {
+      width: min(620px, 100%);
+      margin: 0 auto 28px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 22px;
+      background: #05070b;
+      box-shadow:
+        0 24px 60px rgba(0, 0, 0, 0.36),
+        0 0 38px rgba(255, 186, 103, 0.10);
+    }
+
+    .hero-logo-video video {
+      display: block;
+      width: 100%;
+      height: auto;
+      max-height: 360px;
+      object-fit: cover;
+      background: #05070b;
+    }
+
+    .video-fallback {
+      display: none;
+      padding: 40px 20px;
+      color: var(--muted);
+      text-align: center;
     }
 
     .tagline {
@@ -597,7 +626,36 @@
         border-radius: 24px;
       }
 
-      .tagline {
+  
+    .hero-logo-video {
+      width: min(620px, 100%);
+      margin: 0 auto 28px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 22px;
+      background: #05070b;
+      box-shadow:
+        0 24px 60px rgba(0, 0, 0, 0.36),
+        0 0 38px rgba(255, 186, 103, 0.10);
+    }
+
+    .hero-logo-video video {
+      display: block;
+      width: 100%;
+      height: auto;
+      max-height: 360px;
+      object-fit: cover;
+      background: #05070b;
+    }
+
+    .video-fallback {
+      display: none;
+      padding: 40px 20px;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    .tagline {
         letter-spacing: 0.10em;
       }
 
@@ -639,6 +697,319 @@
       }
     }
   </style>
+
+  <style id="memipede-theme-v3">
+    :root {
+      --bg: #090a08;
+      --surface: rgba(17, 20, 15, 0.86);
+      --surface-strong: rgba(24, 29, 19, 0.97);
+      --border: rgba(232, 196, 102, 0.15);
+      --border-bright: rgba(232, 196, 102, 0.32);
+      --text: #fffdf4;
+      --muted: #aaa99d;
+      --green: #b9ff5d;
+      --blue: #e8c466;
+      --purple: #d99d4e;
+      --pink: #d9cf78;
+      --orange: #f0ba49;
+      --gold: #e8c466;
+      --acid: #b9ff5d;
+      --shadow: 0 30px 90px rgba(0,0,0,0.55);
+    }
+
+    body {
+      background:
+        radial-gradient(circle at 14% 2%, rgba(185,255,93,0.10), transparent 27%),
+        radial-gradient(circle at 89% 18%, rgba(232,196,102,0.14), transparent 30%),
+        radial-gradient(circle at 50% 100%, rgba(111,145,47,0.10), transparent 34%),
+        linear-gradient(180deg, #090a08 0%, #0d100b 50%, #080907 100%);
+    }
+
+    body::before {
+      opacity: 0.20;
+      background-image:
+        linear-gradient(rgba(232,196,102,0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(232,196,102,0.035) 1px, transparent 1px);
+      background-size: 54px 54px;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      margin: 0 -8px 24px;
+      padding: 10px 8px;
+      border-bottom: 1px solid rgba(232,196,102,0.08);
+      background: linear-gradient(180deg, rgba(9,10,8,0.95), rgba(9,10,8,0.70));
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+    }
+
+    .brand-word {
+      background: linear-gradient(90deg, #fff7ce, var(--gold), #fff7ce);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .brand-mark {
+      border-color: rgba(185,255,93,0.38);
+      background: rgba(185,255,93,0.08);
+      box-shadow: 0 0 28px rgba(185,255,93,0.13);
+    }
+
+    .top-link {
+      border-color: rgba(232,196,102,0.16);
+      background: rgba(232,196,102,0.05);
+    }
+
+    .hero {
+      min-height: 0;
+      padding: 46px 28px 58px;
+      border-color: rgba(232,196,102,0.18);
+      background:
+        linear-gradient(135deg, rgba(232,196,102,0.07), rgba(185,255,93,0.025)),
+        rgba(10,12,9,0.82);
+    }
+
+    .hero::before { background: rgba(232,196,102,0.16); }
+    .hero::after { background: rgba(185,255,93,0.13); }
+
+    .eyebrow {
+      margin-bottom: 18px;
+      border-color: rgba(232,196,102,0.30);
+      color: #fff2bd;
+      background: rgba(232,196,102,0.065);
+    }
+
+    .hero-logo-video {
+      position: relative;
+      width: min(720px, 100%);
+      margin-bottom: 31px;
+      border-color: rgba(232,196,102,0.28);
+      border-radius: 24px;
+      background: #050604;
+      box-shadow:
+        0 30px 75px rgba(0,0,0,0.50),
+        0 0 48px rgba(232,196,102,0.12);
+    }
+
+    .hero-logo-video::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      border-radius: inherit;
+      box-shadow:
+        inset 0 0 0 1px rgba(255,255,255,0.03),
+        inset 0 -60px 80px rgba(0,0,0,0.14);
+    }
+
+    .hero-logo-video video {
+      max-height: 420px;
+      object-fit: cover;
+    }
+
+    .video-label {
+      position: absolute;
+      z-index: 2;
+      top: 13px;
+      right: 13px;
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 7px 10px;
+      border: 1px solid rgba(232,196,102,0.24);
+      border-radius: 999px;
+      color: #fff0b0;
+      background: rgba(7,8,6,0.76);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      font-size: 9px;
+      font-weight: 900;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .video-label span {
+      width: 7px;
+      height: 7px;
+      border-radius: 999px;
+      background: var(--acid);
+      box-shadow: 0 0 12px var(--acid);
+    }
+
+    .hero h1 {
+      font-size: clamp(40px, 7vw, 78px);
+      line-height: 0.95;
+      letter-spacing: -0.055em;
+    }
+
+    .hero h1 span {
+      background: linear-gradient(100deg, #fff9dd 3%, var(--gold) 44%, #fff3b2 70%, var(--acid) 100%);
+      background-size: 220% auto;
+      -webkit-background-clip: text;
+      background-clip: text;
+    }
+
+    .tagline {
+      color: #fbf5df;
+      font-size: clamp(17px, 2.8vw, 27px);
+      letter-spacing: 0.11em;
+    }
+
+    .button-primary {
+      color: #151607;
+      background: linear-gradient(135deg, var(--acid), #ddff86);
+      box-shadow: 0 14px 36px rgba(185,255,93,0.19);
+    }
+
+    .button-secondary {
+      border-color: rgba(232,196,102,0.20);
+      background: rgba(232,196,102,0.045);
+    }
+
+    .stat {
+      border-color: rgba(232,196,102,0.13);
+      background: rgba(232,196,102,0.025);
+    }
+
+    .stat strong { color: #fff0b0; }
+
+    .ticker {
+      overflow: hidden;
+      margin: 18px 0 0;
+      border-block: 1px solid rgba(232,196,102,0.12);
+      background: rgba(232,196,102,0.028);
+      mask-image: linear-gradient(90deg, transparent, black 8%, black 92%, transparent);
+      -webkit-mask-image: linear-gradient(90deg, transparent, black 8%, black 92%, transparent);
+    }
+
+    .ticker-track {
+      display: flex;
+      width: max-content;
+      align-items: center;
+      gap: 19px;
+      padding: 12px 0;
+      color: #d8c58b;
+      font-size: 10px;
+      font-weight: 950;
+      letter-spacing: 0.16em;
+      white-space: nowrap;
+      animation: tickerMove 27s linear infinite;
+    }
+
+    .ticker-track i {
+      color: var(--acid);
+      font-size: 7px;
+      font-style: normal;
+    }
+
+    @keyframes tickerMove {
+      to { transform: translateX(-50%); }
+    }
+
+    .section-title h2,
+    .community h2 {
+      background: linear-gradient(90deg, #fffdf4, #e8c466 70%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .search-wrap input {
+      border-color: rgba(232,196,102,0.14);
+      background: rgba(232,196,102,0.025);
+    }
+
+    .search-wrap input:focus {
+      border-color: rgba(185,255,93,0.42);
+      box-shadow: 0 0 0 4px rgba(185,255,93,0.06);
+    }
+
+    .card {
+      border-color: rgba(232,196,102,0.13);
+      background:
+        linear-gradient(145deg, rgba(232,196,102,0.035), transparent 45%),
+        var(--surface);
+    }
+
+    .card:hover,
+    .card:focus-visible {
+      border-color: rgba(232,196,102,0.34);
+      background:
+        linear-gradient(145deg, rgba(232,196,102,0.06), transparent 48%),
+        var(--surface-strong);
+    }
+
+    .card-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 15px;
+    }
+
+    .card-kicker {
+      color: #c9b677;
+      font-size: 9px;
+      font-weight: 950;
+      letter-spacing: 0.12em;
+    }
+
+    .card-icon {
+      border-color: rgba(232,196,102,0.22);
+      background: rgba(232,196,102,0.05);
+    }
+
+    .card-bottom { color: #e4cf8d; }
+
+    .arrow {
+      color: #161608;
+      background: linear-gradient(135deg, var(--gold), #f3dd8b);
+    }
+
+    .memes, .videos, .gifs, .pfps, .banners {
+      --accent: var(--gold);
+    }
+
+    .community {
+      border-color: rgba(232,196,102,0.17);
+      background:
+        radial-gradient(circle at 50% 0%, rgba(185,255,93,0.08), transparent 50%),
+        linear-gradient(120deg, rgba(232,196,102,0.055), rgba(185,255,93,0.025)),
+        rgba(255,255,255,0.02);
+    }
+
+    footer { border-top-color: rgba(232,196,102,0.12); }
+
+    @media (max-width: 560px) {
+      .hero { padding: 30px 17px 44px; }
+      .hero-logo-video {
+        margin-bottom: 25px;
+        border-radius: 18px;
+      }
+      .hero-logo-video video { max-height: 330px; }
+      .video-label {
+        top: 9px;
+        right: 9px;
+        padding: 6px 8px;
+        font-size: 8px;
+      }
+      .hero h1 { font-size: clamp(34px, 11vw, 52px); }
+      .tagline { line-height: 1.45; }
+      .ticker { margin-top: 12px; }
+      .card-kicker {
+        max-width: 115px;
+        text-align: right;
+        line-height: 1.4;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .ticker-track { animation: none; }
+    }
+  </style>
+
 </head>
 
 <body>
@@ -646,7 +1017,7 @@
     <header class="topbar">
       <a class="brand" href="#" aria-label="MEMIPEDE Creative Hub home">
         <span class="brand-mark">🐛</span>
-        <span>MEMIPEDE</span>
+        <span class="brand-word">$MEMIPEDE</span>
       </a>
 
       <a
@@ -664,11 +1035,29 @@
       <div class="hero-inner">
         <div class="eyebrow">Community Creative Library</div>
 
+
+        <div class="hero-logo-video">
+          <div class="video-label"><span></span> Official MEMIPEDE animation</div>
+          <video
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="metadata"
+            aria-label="Official animated MEMIPEDE logo"
+          >
+            <source src="memipede-logo.mp4" type="video/mp4">
+            <div class="video-fallback">
+              Your browser does not support the MEMIPEDE logo video.
+            </div>
+          </video>
+        </div>
+
         <h1>
-          <span>MEMIPEDE</span>
+          <span>THE CREATIVE HUB</span>
         </h1>
 
-        <div class="tagline">Create. Share. Grow.</div>
+        <div class="tagline">Create. Share. Grow. $MEMIPEDE.</div>
 
         <p class="hero-copy">
           The community home for MEMIPEDE memes, videos, GIFs, profile pictures,
@@ -704,6 +1093,19 @@
       </div>
     </section>
 
+    <div class="ticker" aria-label="MEMIPEDE community themes">
+      <div class="ticker-track">
+        <span>$MEMIPEDE</span><i>◆</i><span>MEMES</span><i>◆</i>
+        <span>VIDEOS</span><i>◆</i><span>GIFS</span><i>◆</i>
+        <span>PROFILE PICTURES</span><i>◆</i><span>BANNERS</span><i>◆</i>
+        <span>CREATE • SHARE • GROW</span><i>◆</i>
+        <span>$MEMIPEDE</span><i>◆</i><span>MEMES</span><i>◆</i>
+        <span>VIDEOS</span><i>◆</i><span>GIFS</span><i>◆</i>
+        <span>PROFILE PICTURES</span><i>◆</i><span>BANNERS</span><i>◆</i>
+        <span>CREATE • SHARE • GROW</span><i>◆</i>
+      </div>
+    </div>
+
     <section class="section" id="library">
       <div class="section-head">
         <div class="section-title">
@@ -731,7 +1133,7 @@
           rel="noopener noreferrer"
         >
           <div>
-            <div class="card-icon">🖼️</div>
+            <div class="card-top"><div class="card-icon">🖼️</div><span class="card-kicker">REACTIONS + POSTS</span></div>
             <h3>Memes</h3>
             <p>Ready-to-share images, reactions, jokes, and MEMIPEDE content for posts and replies on X.</p>
           </div>
@@ -749,7 +1151,7 @@
           rel="noopener noreferrer"
         >
           <div>
-            <div class="card-icon">🎬</div>
+            <div class="card-top"><div class="card-icon">🎬</div><span class="card-kicker">CLIPS + EDITS</span></div>
             <h3>Videos</h3>
             <p>Community edits, short clips, animations, and video content ready for social posts.</p>
           </div>
@@ -767,7 +1169,7 @@
           rel="noopener noreferrer"
         >
           <div>
-            <div class="card-icon">🎞️</div>
+            <div class="card-top"><div class="card-icon">🎞️</div><span class="card-kicker">LOOPS + REPLIES</span></div>
             <h3>GIFs</h3>
             <p>Animated reactions and looping MEMIPEDE content for replies, quote posts, and conversations.</p>
           </div>
@@ -785,7 +1187,7 @@
           rel="noopener noreferrer"
         >
           <div>
-            <div class="card-icon">👤</div>
+            <div class="card-top"><div class="card-icon">👤</div><span class="card-kicker">AVATARS + ICONS</span></div>
             <h3>Profile Pictures</h3>
             <p>MEMIPEDE avatars and account images for community members across X and other platforms.</p>
           </div>
@@ -804,7 +1206,7 @@
           id="bannerCard"
         >
           <div>
-            <div class="card-icon">🖥️</div>
+            <div class="card-top"><div class="card-icon">🖥️</div><span class="card-kicker">HEADERS + ARTWORK</span></div>
             <h3>Banners</h3>
             <p>Wide-format MEMIPEDE headers and artwork designed for X profiles, campaigns, and community pages.</p>
           </div>
@@ -861,6 +1263,21 @@
 
       emptyState.style.display = visibleCount === 0 ? "block" : "none";
     });
+
+
+    const logoVideo = document.querySelector(".hero-logo-video video");
+    if (logoVideo && "IntersectionObserver" in window) {
+      const logoObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            logoVideo.play().catch(() => {});
+          } else {
+            logoVideo.pause();
+          }
+        });
+      }, { threshold: 0.15 });
+      logoObserver.observe(logoVideo);
+    }
 
   </script>
 </body>
