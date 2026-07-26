@@ -450,6 +450,14 @@
       transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
     }
 
+    .submission-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .submission-card {
+      min-height: 132px;
+    }
+
     .official-link-card:hover,
     .official-link-card:focus-visible {
       transform: translateY(-4px);
@@ -1291,6 +1299,14 @@
           >
             Join Community on X ↗
           </a>
+          <a
+            class="button button-secondary"
+            href="https://x.com/thememipede?s=11"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Follow MEMIPEDE on X ↗
+          </a>
         </div>
 
         <div class="contract-box" aria-label="Official MEMIPEDE contract address">
@@ -1459,54 +1475,31 @@
       </div>
     </section>
 
-    <section class="official-links" aria-labelledby="officialLinksTitle">
+    <section class="official-links submission-section" aria-labelledby="submissionTitle">
       <div class="section-head">
         <div class="section-title">
-          <h2 id="officialLinksTitle">Official links</h2>
-          <p>Use these verified destinations for buying, joining, and contributing.</p>
+          <h2 id="submissionTitle">Submit your creation</h2>
+          <p>Upload original MEMIPEDE artwork for review and possible addition to the official library.</p>
         </div>
       </div>
 
-      <div class="official-links-grid">
-        <a class="official-link-card" href="https://join.pump.fun/HSag/8yug3xnq" target="_blank" rel="noopener noreferrer">
-          <div class="official-link-icon">🪙</div>
-          <div>
-            <strong>Buy on Pump.fun</strong>
-            <span>Open the official $MEMIPEDE Pump.fun page.</span>
-          </div>
-        </a>
-
-        <a class="official-link-card" href="https://x.com/i/communities/2035187824316797150" target="_blank" rel="noopener noreferrer">
-          <div class="official-link-icon">👥</div>
-          <div>
-            <strong>X Community</strong>
-            <span>Join the MEMIPEDE community and coordinate posts.</span>
-          </div>
-        </a>
-
-        <a class="official-link-card" href="https://x.com/thememipede?s=11" target="_blank" rel="noopener noreferrer">
-          <div class="official-link-icon">𝕏</div>
-          <div>
-            <strong>MEMIPEDE on X</strong>
-            <span>Follow community activity, memes, and announcements.</span>
-          </div>
-        </a>
-
-        <a class="official-link-card" href="https://docs.google.com/forms/d/e/1FAIpQLSfBIQAoAtqh_sySvU59FnaLJRsluMb0dMBOlQCT6tbM0MWIwQ/viewform?usp=dialog" target="_blank" rel="noopener noreferrer">
+      <div class="official-links-grid submission-grid">
+        <a class="official-link-card submission-card" href="https://docs.google.com/forms/d/e/1FAIpQLSfBIQAoAtqh_sySvU59FnaLJRsluMb0dMBOlQCT6tbM0MWIwQ/viewform?usp=dialog" target="_blank" rel="noopener noreferrer">
           <div class="official-link-icon">📤</div>
           <div>
             <strong>Submit an Asset</strong>
-            <span>Upload your original MEMIPEDE creation for review.</span>
+            <span>Upload memes, videos, GIFs, profile pictures, banners, and other original MEMIPEDE content.</span>
           </div>
         </a>
       </div>
     </section>
 
-    <section class="community">
-      <h2>Built by the community.</h2>
+    <section class="community community-contribute">
+      <div class="community-kicker">Community contributions</div>
+      <h2>Help grow the MEMIPEDE library.</h2>
       <p>
-        Every meme, banner, GIF, and video helps MEMIPEDE spread across X.
-        Create something original, share it, and help grow the official asset library.
+        Created a meme, video, GIF, profile picture, or banner?
+        Submit your original work for review and possible addition to the official collection.
       </p>
       <div class="hero-actions">
         <a
